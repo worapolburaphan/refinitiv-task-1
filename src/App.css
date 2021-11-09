@@ -1,0 +1,29 @@
+.app {
+  min-width: 600px;
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  min-width: 600px;
+}
+
+.app .container .sidebar, .app .container .content, .app .container .right-sidebar {
+  border: 1px solid #000;
+  padding: 16px;
+}
+
+.app .container .sidebar {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.app .container .content {
+  flex: 1;
+}
+
+.app .container .right-sidebar {
+  width: 300px;
+  flex-shrink: 0;
+}
